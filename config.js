@@ -1,13 +1,13 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  url: 'https://superforecast.github.io',
+  title: 'Docs & RFCs',
+  subtitle: 'Plans and documentation for my superforecast project',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  googleAnalyticsId: 'UA-XXXXXXX-X',
   menu: [
     {
       label: 'Articles',
@@ -23,14 +23,14 @@ module.exports = {
     }
   ],
   author: {
-    name: 'John Doe',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    name: 'Thomas chen',
+    photo: '/placeholder.png',
+    bio: 'Computer programmer and aspiring systems engineer',
     contacts: {
       email: '#',
       telegram: '#',
       twitter: '#',
-      github: '#',
+      github: 'foxnewsnetwork',
       rss: '#',
       vkontakte: '#'
     }
