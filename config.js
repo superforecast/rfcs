@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  url: 'https://superforecast.github.io',
+  url: 'https://superforecast.github.io/rfcs',
   title: 'Docs & RFCs',
   subtitle: 'Plans and documentation for my superforecast project',
   copyright: '© All rights reserved.',
