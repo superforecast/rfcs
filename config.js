@@ -1,7 +1,8 @@
 'use strict';
 
 module.exports = {
-  url: 'https://superforecast.github.io/rfcs',
+  url: 'https://superforecast.github.io',
+  pathPrefix: 'rfcs',
   title: 'Docs & RFCs',
   subtitle: 'Plans and documentation for my superforecast project',
   copyright: '© All rights reserved.',
@@ -11,20 +12,20 @@ module.exports = {
   menu: [
     {
       label: 'Articles',
-      path: '/rfcs/'
+      path: '/'
     },
     {
       label: 'About me',
-      path: '/rfcs/pages/about'
+      path: '/pages/about'
     },
     {
       label: 'Contact me',
-      path: '/rfcs/pages/contacts'
+      path: '/pages/contacts'
     }
   ],
   author: {
     name: 'Thomas chen',
-    photo: '/rfcs/placeholder.png',
+    photo: '/placeholder.png',
     bio: 'Computer programmer and aspiring systems engineer',
     contacts: {
       email: '#',

@@ -5,25 +5,27 @@ const _ = require('lodash');
 const createCategoriesPages = require('./pagination/create-categories-pages.js');
 const createTagsPages = require('./pagination/create-tags-pages.js');
 const createPostsPages = require('./pagination/create-posts-pages.js');
+const siteConfig = require('../config.js');
+const urljoin = require('url-join');
 
 const createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
   // 404
   createPage({
-    path: '/404',
+    path: urljoin(siteConfig.url, siteConfig.pathPrefix, '/404'),
     component: path.resolve('./src/templates/not-found-template.js')
   });
 
   // Tags list
   createPage({
-    path: '/tags',
+    path: urljoin(siteConfig.url, siteConfig.pathPrefix, '/tags'),
     component: path.resolve('./src/templates/tags-list-template.js')
   });
 
   // Categories list
   createPage({
-    path: '/categories',
+    path: urljoin(siteConfig.url, siteConfig.pathPrefix, '/categories'),
     component: path.resolve('./src/templates/categories-list-template.js')
   });
 

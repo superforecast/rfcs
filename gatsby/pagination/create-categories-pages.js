@@ -3,6 +3,7 @@
 const _ = require('lodash');
 const path = require('path');
 const siteConfig = require('../../config.js');
+const urljoin = require('url-join');
 
 module.exports = async (graphql, actions) => {
   const { createPage } = actions;
@@ -23,7 +24,7 @@ module.exports = async (graphql, actions) => {
 
   _.each(result.data.allMarkdownRemark.group, (category) => {
     const numPages = Math.ceil(category.totalCount / postsPerPage);
-    const categorySlug = `/category/${_.kebabCase(category.fieldValue)}`;
+    const categorySlug = urljoin(siteConfig.url, siteConfig.pathPrefix, 'category', _.kebabCase(category.fieldValue));
 
     for (let i = 0; i < numPages; i += 1) {
       createPage({
