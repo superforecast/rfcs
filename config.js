@@ -11,20 +11,20 @@ module.exports = {
   menu: [
     {
       label: 'Articles',
-      path: '/'
+      path: '/rfcs/'
     },
     {
       label: 'About me',
-      path: '/pages/about'
+      path: '/rfcs/pages/about'
     },
     {
       label: 'Contact me',
-      path: '/pages/contacts'
+      path: '/rfcs/pages/contacts'
     }
   ],
   author: {
     name: 'Thomas chen',
-    photo: '/placeholder.png',
+    photo: '/rfcs/placeholder.png',
     bio: 'Computer programmer and aspiring systems engineer',
     contacts: {
       email: '#',
