@@ -2,10 +2,11 @@
 
 const siteConfig = require('./config.js');
 const postCssPlugins = require('./postcss-config.js');
+const urljoin = require('url-join');
 
 module.exports = {
   siteMetadata: {
-    url: siteConfig.url,
+    url: urljoin(siteConfig.url, siteConfig.pathPrefix),
     title: siteConfig.title,
     subtitle: siteConfig.subtitle,
     copyright: siteConfig.copyright,
