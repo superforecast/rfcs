@@ -13,19 +13,19 @@ const createPages = async ({ graphql, actions }) => {
 
   // 404
   createPage({
-    path: urljoin(siteConfig.url, siteConfig.pathPrefix, '/404'),
+    path: '/404',
     component: path.resolve('./src/templates/not-found-template.js')
   });
 
   // Tags list
   createPage({
-    path: urljoin(siteConfig.url, siteConfig.pathPrefix, '/tags'),
+    path: '/tags',
     component: path.resolve('./src/templates/tags-list-template.js')
   });
 
   // Categories list
   createPage({
-    path: urljoin(siteConfig.url, siteConfig.pathPrefix, '/categories'),
+    path: '/categories',
     component: path.resolve('./src/templates/categories-list-template.js')
   });
 

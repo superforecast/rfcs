@@ -24,7 +24,7 @@ module.exports = async (graphql, actions) => {
 
   _.each(result.data.allMarkdownRemark.group, (tag) => {
     const numPages = Math.ceil(tag.totalCount / postsPerPage);
-    const tagSlug = urljoin(siteConfig.url, siteConfig.pathPrefix, 'tag', _.kebabCase(tag.fieldValue));
+    const tagSlug = urljoin('tag', _.kebabCase(tag.fieldValue));
 
     for (let i = 0; i < numPages; i += 1) {
       createPage({
